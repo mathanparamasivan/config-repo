@@ -5,9 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mathanparamasivan/config-repo  # Git repository URI
+          uri: https://github.com/mathanparamasivan/central-config-repo  # Git repository URI
           cloneOnStart: true  # Clone the repo when the server starts
-          searchPaths: '{application}'  # Search for configuration files specific to the app name
+          searchPaths: '{application},/{application}-{profile}'  # Search for configuration files specific to the app name
           default-label: main  # Default branch (if using Git)
 server:
-    port: 8888
+  port: 8888
