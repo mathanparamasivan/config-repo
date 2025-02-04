@@ -33,7 +33,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- Spring Boot Starter Web (Required for Config Server to function) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
